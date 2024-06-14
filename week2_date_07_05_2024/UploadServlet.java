@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 @WebServlet("/upload")
-@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, // 2MB
-                 maxFileSize = 1024 * 1024 * 10,      // 10MB
-                 maxRequestSize = 1024 * 1024 * 50)   // 50MB
+@MultipartConfig(fileSizeThreshold = 1024 * 1024 * 2, 
+                 maxFileSize = 1024 * 1024 * 10,      
+                 maxRequestSize = 1024 * 1024 * 50)   
 public class UploadServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
